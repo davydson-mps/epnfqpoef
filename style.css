@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3E2723;
+    padding: 10px 30px;
+    color: white;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFB37A; 
+}
+
+section {
+    padding: 40px 30px;
+}
+
+#inicio { 
+    text-align: center;
+}
+
+/* inicio dos botoes */
+
+.botao {
+    background-color: #D9480F; 
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #3E2723;
+}
+
+/* fim dos botoes */
+
+#pratos h2 {
+    text-align: center;
+}
+
+.pratos { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.prato-feijoada, .prato-bolo, .prato-suco {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 4px solid #D9480F;
+    transition: 0.3s;
+}
+
+.prato-feijoada:hover, .prato-bolo:hover, .prato-suco:hover {
+    background-color: #FFF4E6;
+}
+
+.prato-feijoada {
+    border-color: #C92A2A;
+}
+
+.prato-bolo {
+    border-color: #F2B705;
+}
+
+.prato-suco {
+    border-color: #2F9E44;
+}
+
+.pratos img {
+   width: 100%;
+   height: 160px;
+   border-radius: 8px;
+}
+
+.pratos a {
+    color: #3E2723;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #3E2723; 
+    color: white; 
+    padding: 20px 30px;
+    text-align: center;
+}
+
+/* Telas de dispositivos móveis */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 16px;
+        text-align: center;
+    }
+
+    h1 { 
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 16px;
+    }
+
+    section {
+        padding: 24px 16px;
+     }
+
+    .prato-feijoada,
+    .prato-bolo,
+    .prato-suco {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+     .pratos img {
+        height: 200px;
+    }
+
+    footer {
+        padding: 20px 16px;
+    }
+
+}
+
+
